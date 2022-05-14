@@ -1,41 +1,32 @@
+import { useState } from 'react';
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
 import './App.css';
+import GuestScore from './GuestScore';
+import HomeScore from './HomeScore';
+import MainCountdown from './MainCountdown';
+import PeriodCounter from './PeriodCounter';
+import ThirtyRuleCountdown from './ThirtyRuleCountdown';
+import TwentyRuleCountdown from './TwentyRuleCountdown';
 
-const Hello = () => {
+// TODO: Responsividade dos contadores e geral
+// TODO: Timer principal de periodo e os dois timers de jogadas e expulsos
+
+const Home = () => {
   return (
-    <div>
-      <div className="Hello">
-        <img width="200px" alt="icon" src={icon} />
-      </div>
-      <h1>electron-react-boilerplate</h1>
-      <div className="Hello">
-        <a
-          href="https://electron-react-boilerplate.js.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              📚
-            </span>
-            Read our docs
-          </button>
-        </a>
-        <a
-          href="https://github.com/sponsors/electron-react-boilerplate"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              🙏
-            </span>
-            Donate
-          </button>
-        </a>
-      </div>
-    </div>
+    <main className="main">
+      <section className="timerSection">
+        <ThirtyRuleCountdown />
+        <TwentyRuleCountdown />
+      </section>
+      <section className="mainSection">
+        <HomeScore />
+        <div className="period">
+          <MainCountdown />
+          <PeriodCounter />
+        </div>
+        <GuestScore />
+      </section>
+    </main>
   );
 };
 
@@ -43,7 +34,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );

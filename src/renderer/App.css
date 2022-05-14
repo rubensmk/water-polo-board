@@ -3,60 +3,126 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 body {
-  position: relative;
   color: white;
-  height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
+  background: #424242;
   font-family: sans-serif;
-  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
+.timerSection {
+  display: flex;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-button:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  height: fit-content;
-  width: fit-content;
-  margin: 10px;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-.Hello {
+.playTimer {
+  background-color: #000000;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+}
+
+.clock {
+  font-size: 10rem;
+  color: #ff0000;
+  margin-right: 1rem;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainSection {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goalScore {
+  background-color: #000000;
+  height: 80%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goalPoint {
+  color: #00bd00;
+  font-size: 20rem;
+}
+
+.period {
+  margin: 40px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.periodCounter {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  height: 20%;
+  width: 20%;
+}
+
+.btn-change {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0;
+  height: 50%;
+}
+
+.btn-goals {
+  background: transparent;
+  font-size: 2rem;
+  color: white;
+  height: 20%;
+  border: 0;
+}
+
+.periodTimer {
+  color: #ffa500;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+}
+
+.timer {
+  font-size: 20rem;
+}
+
+.counter {
+  color: #ffa500;
+  font-size: 4rem;
+}
+.icon {
+  width: 14px;
+  height: 14px;
+}
+
+.btn-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background: transparent;
 }
