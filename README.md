@@ -1,4 +1,4 @@
-<h1>Water Polo Scoreboard</h1>
+<h1>Electron Water Polo Scoreboard</h1>
 
 ![image](https://user-images.githubusercontent.com/52255226/168454749-f786e25f-be8b-4b63-a33d-b43edfca69a0.png)
 
