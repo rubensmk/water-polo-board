@@ -8,9 +8,6 @@ import PeriodCounter from './PeriodCounter';
 import ThirtyRuleCountdown from './ThirtyRuleCountdown';
 import TwentyRuleCountdown from './TwentyRuleCountdown';
 
-// TODO: Responsividade dos contadores e geral
-// TODO: Timer principal de periodo e os dois timers de jogadas e expulsos
-
 const Home = () => {
   return (
     <main className="main">

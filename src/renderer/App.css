@@ -33,6 +33,12 @@ body {
   margin-right: 1rem;
 }
 
+@media (max-width: 1088px) {
+  .clock {
+    font-size: 9rem;
+  }
+}
+
 .main {
   height: 100vh;
   width: 100vw;
@@ -71,7 +77,7 @@ body {
 }
 
 .periodCounter {
-  background-color: black;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +113,19 @@ body {
 }
 
 .timer {
-  font-size: 20rem;
+  font-size: 14rem;
+}
+
+@media (max-width: 1228px) {
+  .timer {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 1088px) {
+  .timer {
+    font-size: 10rem;
+  }
 }
 
 .counter {
