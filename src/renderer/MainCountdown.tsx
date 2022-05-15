@@ -31,6 +31,17 @@ export default function MainCountdown() {
     }
   }, [isActive, mainTimer]);
 
+  useEffect(() => {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '1') {
+        setIsActive((prevState) => !prevState);
+      }
+      if (e.key === '2') {
+        handleRestart();
+      }
+    });
+  }, []);
+
   return (
     <div className="periodTimer">
       <h1 className="timer">

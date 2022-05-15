@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function GuestScore() {
   const [guestTeamPoints, setGuestTeamPoints] = useState(0);
@@ -11,6 +11,7 @@ export default function GuestScore() {
   function plusGoal() {
     setGuestTeamPoints((prevState) => prevState + 1);
   }
+
   return (
     <div className="goalScore">
       <button type="button" className="btn-goals" onClick={minusGoal}>

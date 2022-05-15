@@ -32,6 +32,17 @@ export default function ThirtyRuleCountdown() {
     }
   }, [isActive, mainTimer]);
 
+  useEffect(() => {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '3') {
+        setIsActive((prevState) => !prevState);
+      }
+      if (e.key === '4') {
+        handleRestart();
+      }
+    });
+  }, []);
+
   return (
     <div className="playTimer">
       <h1 className="clock">{`${minutesLeft}${minutesRight}:${secondsLeft}${secondsRight}`}</h1>
